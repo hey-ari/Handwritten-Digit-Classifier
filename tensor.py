@@ -72,10 +72,11 @@ with tf.Session() as sess:
 		if iteration % display_step == 0:
 			print("Iteration:", '%04d' % (iteration+1), "cost=", "{:.9f}".format(avg_cost))
 
-	print("training complete!")
+	print("Training Completed!")
 
 	#test the model
 	predictions = tf.equal(tf.argmax(model, 1), tf.argmax(y, 1))
+	
 	#calculate accuracy
 	accuracy = tf.reduce_mean(tf.cast(predictions, "float"))
 	print("Accuracy:", accuracy.eval({x: mnist.test.images, y: mnist.test.labels}))
