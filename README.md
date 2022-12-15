@@ -3,7 +3,7 @@ Handwritten digits classifier
 Attempting using Tensorflow to classify handwritten digits taken from <a href="http://yann.lecun.com/exdb/mnist/">MNIST dataset.</a>  
 
 
-<header> Prerequisites </header>
+Prerequisites
 
 Can be found in requirements.txt
 
